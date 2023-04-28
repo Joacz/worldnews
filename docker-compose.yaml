@@ -1,0 +1,8 @@
+services:
+  news-db:
+    image: mongo:5.0.0
+    ports:
+      - 23100:27017
+    volumes:
+      - /mongo/data-db/
+    container_name: news-database
